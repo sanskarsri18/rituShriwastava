@@ -8,11 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ritu Shriwastava</title>
     <style>
-
-        body{
+        body {
             background-color: #f8f9fa;
             /* overflow: visible; */
         }
+
         .logo {
             border-radius: 50%;
         }
@@ -22,7 +22,7 @@
         }
 
         .clarity {
-            color: gold;
+            color: rgb(15, 6, 152);
         }
 
         span {
@@ -82,7 +82,7 @@
 
         }
 
-        #contactus{
+        #contactus {
             width: 70%;
         }
 
@@ -100,16 +100,33 @@
             padding-left: 15%;
         }
 
-        #mission{
+        #mission {
             background-color: #f8f9fa;
         }
 
 
-        #approach{
+        #approach {
             background-color: #f8f9fa;
         }
 
-        
+        #HOME {
+            position: relative;
+        }
+
+        #HOME::before {
+            content: "";
+            background: url('./background.jpg');
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.2;
+            /* Adjust the opacity to your preference (0.5 is 50%) */
+            z-index: -1;
+            /* This places the background behind the content */
+        }
     </style>
 </head>
 
@@ -156,12 +173,13 @@
 
 
     <!-- Home Section  -->
-    <div class="px-4 py-5 my-5 text-center">
+    <div class="px-4 py-5 my-5 text-center" id="HOME">
         <img class="d-block mx-auto mb-4" src="./logo.jpg" alt="" width="25%" height="200" id="home">
-        <h1 class="display-5 fw-bold text-body-emphasis">Compassion, <span class="clarity">clarity</span> and
+        <h1 class="display-5 fw-bold text-body-emphasis opaque">Compassion, <span class="clarity opaque">clarity</span>
+            and
             <span>transformation</span> <br>We're here for you
         </h1>
-        <div class="col-lg-6 mx-auto">
+        <div class="col-lg-6 mx-auto opaque">
             <p class="lead mb-4">At our counseling practice, we believe in the power of compassion, clarity, and
                 transformation. We understand that life can present its challenges, leaving you feeling overwhelmed or
                 lost. That's why we're here for you, dedicated to providing a safe and nurturing environment where you
@@ -182,40 +200,47 @@
         <div class="col-lg-6">
             <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3"><span class="clarity">About Me:</span><br><span
                     id="name">Ritu Shriwastava</span></h1>
-            <p class="lead">A passionate and dedicated counseling professional with a strong educational background in psychology. With a master's degree in psychology and my ongoing pursuit of a PGDCPCS(Post Graduate Diploma in Counseling Psychology and Counseling Skills), I am committed to making a positive impact on people's lives.</p>
+            <p class="lead">A passionate and dedicated counseling professional with a strong educational background in
+                psychology. With a master's degree in psychology and my ongoing pursuit of a PGDCPCS(Post Graduate
+                Diploma in Counseling Psychology and Counseling Skills), I am committed to making a positive impact on
+                people's lives.</p>
 
         </div>
     </div>
 
     <!-- My mission -->
     <div class="px-4 py-5 my-5 text-center" id="mission">
-        
+
         <h1 class="display-5 fw-bold text-body-emphasis"><span style="color: blueviolet;">My Mission</span></h1>
         <div class="col-lg-6 mx-auto">
-          <p class="lead mb-4">
-            
-            My mission is to help individuals navigate the complex journey of life, particularly in the areas of relationships, education, and career. I believe in the power of counseling to bring clarity, resilience, and fulfillment to people's lives.
+            <p class="lead mb-4">
+
+                My mission is to help individuals navigate the complex journey of life, particularly in the areas of
+                relationships, education, and career. I believe in the power of counseling to bring clarity, resilience,
+                and fulfillment to people's lives.
             </p>
-          
+
         </div>
-      </div>
+    </div>
 
 
 
     <!-- My Approach -->
     <div class="px-4 py-5 my-5 text-center" id="approach">
-        
+
         <h1 class="display-5 fw-bold text-body-emphasis miss"> <span style="color: darkorange;">My Approach</span></h1>
         <div class="col-lg-6 mx-auto">
-          <p class="lead mb-4">
-            
-            
-            My counseling approach is client-centered, compassionate, and evidence-based. I tailor my methods to suit the unique needs of each individual, ensuring that every counseling session is a collaborative journey toward personal growth and fulfillment.
-            
+            <p class="lead mb-4">
+
+
+                My counseling approach is client-centered, compassionate, and evidence-based. I tailor my methods to
+                suit the unique needs of each individual, ensuring that every counseling session is a collaborative
+                journey toward personal growth and fulfillment.
+
             </p>
-          
+
         </div>
-      </div>
+    </div>
 
 
 
@@ -235,10 +260,12 @@
                     </svg>
                 </div>
                 <h3 class="fs-2 text-body-emphasis">Career Counseling</h3>
-                <p> 
-                    I assist individuals in identifying their strengths, passions, and career goals. Through personalized guidance, I help clients make informed career choices and navigate the path to professional success.
-                    
-                    </p>
+                <p>
+                    I assist individuals in identifying their strengths, passions, and career goals. Through
+                    personalized guidance, I help clients make informed career choices and navigate the path to
+                    professional success.
+
+                </p>
 
             </div>
             <div class="feature col feat">
@@ -252,23 +279,28 @@
                 </div>
                 <h3 class="fs-2 text-body-emphasis">Relationship Counseling</h3>
                 <p>
-                    I provide a safe and empathetic space for individuals and couples to work through their relationship challenges, improve communication, and build stronger, more meaningful connections.
-                    </p>
+                    I provide a safe and empathetic space for individuals and couples to work through their relationship
+                    challenges, improve communication, and build stronger, more meaningful connections.
+                </p>
 
             </div>
             <div class="feature col feat">
                 <div
                     class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-backpack" viewBox="0 0 16 16">
-                        <path d="M4.04 7.43a4 4 0 0 1 7.92 0 .5.5 0 1 1-.99.14 3 3 0 0 0-5.94 0 .5.5 0 1 1-.99-.14ZM4 9.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-4Zm1 .5v3h6v-3h-1v.5a.5.5 0 0 1-1 0V10H5Z"/>
-                        <path d="M6 2.341V2a2 2 0 1 1 4 0v.341c2.33.824 4 3.047 4 5.659v5.5a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 13.5V8a6.002 6.002 0 0 1 4-5.659ZM7 2v.083a6.04 6.04 0 0 1 2 0V2a1 1 0 0 0-2 0Zm1 1a5 5 0 0 0-5 5v5.5A1.5 1.5 0 0 0 4.5 15h7a1.5 1.5 0 0 0 1.5-1.5V8a5 5 0 0 0-5-5Z"/>
-                      </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-backpack" viewBox="0 0 16 16">
+                        <path
+                            d="M4.04 7.43a4 4 0 0 1 7.92 0 .5.5 0 1 1-.99.14 3 3 0 0 0-5.94 0 .5.5 0 1 1-.99-.14ZM4 9.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-4Zm1 .5v3h6v-3h-1v.5a.5.5 0 0 1-1 0V10H5Z" />
+                        <path
+                            d="M6 2.341V2a2 2 0 1 1 4 0v.341c2.33.824 4 3.047 4 5.659v5.5a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 13.5V8a6.002 6.002 0 0 1 4-5.659ZM7 2v.083a6.04 6.04 0 0 1 2 0V2a1 1 0 0 0-2 0Zm1 1a5 5 0 0 0-5 5v5.5A1.5 1.5 0 0 0 4.5 15h7a1.5 1.5 0 0 0 1.5-1.5V8a5 5 0 0 0-5-5Z" />
+                    </svg>
                 </div>
                 <h3 class="fs-2 text-body-emphasis">Educational Counseling</h3>
                 <p>
-                    
-                    Whether you're a student, parent, or educator, I offer guidance on educational choices, academic challenges, and creating effective learning strategies.
-                    </p>
+
+                    Whether you're a student, parent, or educator, I offer guidance on educational choices, academic
+                    challenges, and creating effective learning strategies.
+                </p>
 
             </div>
 
